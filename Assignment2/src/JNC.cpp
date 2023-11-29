@@ -1,5 +1,5 @@
-#include "global.h"
-#include "tools.h"
+#include "header/global.h"
+#include "header/tools.h"
 
 string JNC(string arg, string programCounter, string Registers[],bool flag[]){
 

@@ -1,6 +1,6 @@
-#include "global.h"
+#include "header/global.h"
 #include <fstream>
-#include "tools.h"
+#include "header/tools.h"
 
 class simulator8085
 {

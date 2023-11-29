@@ -1,5 +1,5 @@
-#include "global.h"
-#include "tools.h"
+#include "header/global.h"
+#include "header/tools.h"
 
 void CMP (string arg1,string registers[],bool flag[],map<string,string> &memory)
 {

@@ -1,9 +1,9 @@
-#include "global.h"
-#include "tools.h"
-#include "arithmetic.h"
-#include "load.h"
-#include "logical.h"
-#include "jump.h"
+#include "header/global.h"
+#include "header/tools.h"
+#include "header/arithmetic.h"
+#include "header/load.h"
+#include "header/logical.h"
+#include "header/jump.h"
 
 string execution(string command, string Registers[], bool flag[], map<string,string>&memory,string programCounter){
 

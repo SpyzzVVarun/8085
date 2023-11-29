@@ -1,5 +1,5 @@
-#include "global.h"
-#include "tools.h"
+#include "header/global.h"
+#include "header/tools.h"
 
 void SUI(string arg, string registers[],bool flag[])
 {

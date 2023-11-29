@@ -1,8 +1,8 @@
 // This file, MOV.cpp, is part of an 8085 emulator project.
 // It contains the implementation of the MOV instruction, which is used to move data between registers and memory.
 
-#include "global.h" 
-#include "tools.h"
+#include "header/global.h" 
+#include "header/tools.h"
 
 // Implementation of the MOV instruction.
 void MOV(string argument1, string argument2, string registers[], bool flag[], map<string, string> &memory)

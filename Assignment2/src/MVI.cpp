@@ -1,8 +1,8 @@
 // This file is part of an 8085 emulator project.
 // It contains the implementation of the MVI (Move Immediate) instruction.
 
-#include "global.h"
-#include "tools.h"
+#include "header/global.h"
+#include "header/tools.h"
 
 void MVI (string arg1,string arg2,string registers[],bool flags[],map<string,string> &memory){
     if(arg1=="M"){

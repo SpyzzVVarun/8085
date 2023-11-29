@@ -1,5 +1,5 @@
-#include "global.h"
-#include "tools.h"
+#include "header/global.h"
+#include "header/tools.h"
 void LXI (string arg1,string arg2,string registers[],bool flags[],map<string,string> &memory)
 {
     if(arg1=="M")

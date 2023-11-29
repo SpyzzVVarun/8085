@@ -1,7 +1,7 @@
 // This file is part of an 8085 emulator project.
 // It contains a function to convert a hexadecimal string to decimal and store the result in an array.
 
-#include "global.h"
+#include "header/global.h"
 #include <string>
 
 void hexToDecimal(string pc, int arr[]) {

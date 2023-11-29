@@ -1,7 +1,7 @@
 // This file is part of an 8085 emulator project.
 // It contains the implementation of the registerNumber() function.
 
-#include "global.h"
+#include "header/global.h"
 
 // This function takes a string representing a register name (A, B, C, D, E, H, L)
 // and returns the corresponding register number.

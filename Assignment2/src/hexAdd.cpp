@@ -1,5 +1,5 @@
-#include "global.h"
-#include "tools.h"
+#include "header/global.h"
+#include "header/tools.h"
 /*Carry flag remains unaffected in INR and DCR operations*/
 
 string hexAdd(string arg1,string arg2,bool flag[],bool carry){

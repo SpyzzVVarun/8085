@@ -1,8 +1,8 @@
 // This file is a part of an 8085 emulator project.
 // It contains the implementation of the updatedAddress function, which is responsible for updating the memory address in the emulator.
 
-#include "global.h"
-#include "tools.h"
+#include "header/global.h"
+#include "header/tools.h"
 
 string updatedAddress(string PC, map<string, string>& Memory) {
     string command = Memory[PC];

@@ -1,10 +1,8 @@
 IDIR = ./header
+ODIR= ./object
+
 CC = clang++
 CFLAGS=-I$(IDIR)
-
-ODIR=object
-LDIR=./src
-
 LIBS=-lm
 
 _DEPS = global.h 

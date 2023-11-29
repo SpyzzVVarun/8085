@@ -6,7 +6,7 @@
 */
 
 
-#include "global.h"
+#include "header/global.h"
 
 int operationSize(string str){
 
