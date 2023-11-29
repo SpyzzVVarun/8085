@@ -53,30 +53,6 @@ string execution(string command, string Registers[], bool flag[], map<string,str
 			commandSize = operationSize(commandPart[0]);
 			return nextAddress(programCounter,commandSize);
 	}
-	else if(commandPart[0] == "LHLD"){
-
-			LHLD(commandPart[1],Registers,flag,memory);
-			commandSize = operationSize(commandPart[0]);
-			return nextAddress(programCounter,commandSize);
-	}
-	else if(commandPart[0] == "SHLD"){
-
-			SHLD(commandPart[1],Registers,flag,memory);
-			commandSize = operationSize(commandPart[0]);
-			return nextAddress(programCounter,commandSize);
-	}
-	else if(commandPart[0] == "STAX"){
-
-			STAX(commandPart[1],Registers,flag,memory);
-			commandSize = operationSize(commandPart[0]);
-			return nextAddress(programCounter,commandSize);
-	}
-	else if(commandPart[0] == "XCHG"){
-
-			XCHG(Registers,flag);
-			commandSize = operationSize(commandPart[0]);
-			return nextAddress(programCounter,commandSize);
-	}
 	else if(commandPart[0] == "ADD"){
 
 			ADD(commandPart[1],Registers,flag,memory);
@@ -131,12 +107,6 @@ string execution(string command, string Registers[], bool flag[], map<string,str
 			commandSize = operationSize(commandPart[0]);
 			return nextAddress(programCounter,commandSize);
 	}
-	else if(commandPart[0] == "CMA"){
-
-			CMA(Registers,flag);
-			commandSize = operationSize(commandPart[0]);
-			return nextAddress(programCounter,commandSize);
-	}
 	else if(commandPart[0] == "CMP"){
 
 			CMP(commandPart[1],Registers,flag,memory);
@@ -162,12 +132,6 @@ string execution(string command, string Registers[], bool flag[], map<string,str
 	else if(commandPart[0] == "JNZ"){
 
 			return JNZ(commandPart[1],programCounter,Registers,flag);
-	}
-	else if(commandPart[0] == "SET"){
-
-			SET(commandPart[1],commandPart[2],memory);
-			commandSize = operationSize(commandPart[0]);
-			return nextAddress(programCounter,commandSize);
 	}
 	return "";
 }
