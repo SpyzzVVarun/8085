@@ -17,7 +17,7 @@ string updatedAddress(string PC, map<string, string>& Memory) {
         // Split the command into tokens using delimiter " ,"
         const char* partition = command.c_str();
         char* temporary = (char*)partition;
-        const char* delimiter = " ,";
+        const char* delimiter = " ";
         char* part = strtok(temporary, delimiter);
         opcode = part;
     }

@@ -20,8 +20,9 @@ public :
 		for(int i=0;i<8;i++)
 			flag[i] = false;
 		
-		start = "";
-		pc = "";
+		start = "0000";
+		pc = "0000";
+        sequence.push_back(start);
 	}
     void input()
     {
@@ -45,8 +46,9 @@ public :
             getline(input,line);
             Memory[pc]=line;
             pc=updatedAddress(pc,Memory);
-            if(line=="HLT")
+            if(line=="HLT"){
                 break;
+            }
             sequence.push_back(pc);
         }
         int size=sequence.size();
@@ -60,6 +62,7 @@ public :
 int main(int argc,char* argv[])
 {
     simulator8085 instance;
-    instance.input();
+    // instance.input();
+    // cout << argv[1] << "\n";
     instance.ProgramFile(argv[1]);
 }
