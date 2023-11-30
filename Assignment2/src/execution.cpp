@@ -14,13 +14,11 @@ string execution(string command, string Registers[], bool flag[], map<string,str
 	char *temporary = (char*)partition;
 	const char *delimiter = " ,";
 	char *part = strtok(temporary,delimiter);
-
 	while(part!=NULL){
 		inst = part;
 		commandPart.push_back(inst);
 		part = strtok(NULL,delimiter);
 	}
-
 	if(commandPart[0] == "MOV"){
 			MOV(commandPart[1],commandPart[2],Registers,flag,memory);
 			commandSize = operationSize(commandPart[0]);

@@ -4,7 +4,6 @@
 string JNZ(string arg, string programCounter, string Registers[],bool flag[]){
 
 	if(flag[6] == false){
-		
 		return arg;
 	}
 	else{

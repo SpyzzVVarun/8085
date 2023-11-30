@@ -20,9 +20,8 @@ public :
 		for(int i=0;i<8;i++)
 			flag[i] = false;
 		
-		start = "0000";
-		pc = "0000";
-        sequence.push_back(start);
+		start = "";
+		pc = "";
 	}
     void input()
     {
@@ -56,13 +55,13 @@ public :
         {
             pc=execution(Memory[sequence[i]],registers,flag,Memory,pc);
         }
+        cout << Memory["2000"];
     }
 };
 
 int main(int argc,char* argv[])
 {
     simulator8085 instance;
-    // instance.input();
-    // cout << argv[1] << "\n";
+    instance.input();
     instance.ProgramFile(argv[1]);
 }
